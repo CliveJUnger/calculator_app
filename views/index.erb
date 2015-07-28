@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Basic Calculator</h1>
+    <form method="POST" action="/result">
+      <input type="text" name= "input_num1">
+      <select name="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="text" name= "input_num2">
+      <input type="submit" value="submit">
+    </form>
+    <h2>= <%@answer%></h2>
+  </body>
+</html>
